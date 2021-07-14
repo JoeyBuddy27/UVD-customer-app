@@ -23,3 +23,7 @@
 .MuiCardContent-root {
   padding: 0.5em !important;
 }
+
+.card-links {
+  text-decoration: none;
+}

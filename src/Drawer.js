@@ -11,8 +11,11 @@ import ListItemText from "@material-ui/core/ListItemText";
 import InboxIcon from "@material-ui/icons/MoveToInbox";
 import MenuIcon from "@material-ui/icons/Menu";
 import logo from "./images/logo.png";
+import logoIcon from "./images/icon.png";
 // import MailIcon from "@material-ui/icons/Mail";
 import "./drawer.css";
+
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
   list: {
@@ -55,16 +58,34 @@ export default function Drawer() {
     >
       <List>
         {[
-          "Account Login",
-          "Track Van",
-          "Booking Form",
-          "Terms & Conditions",
+          {
+            name: "Call",
+            href: "tel:02030519033",
+            target: "_blank",
+          },
+          {
+            name: "Booking",
+            href: "/booking",
+          },
+          {
+            name: "My Account",
+            href: "https://portal.joblogic.com",
+            target: "_blank",
+          },
+          {
+            name: "Van Tracking",
+            href: "/van",
+            target: "",
+          },
         ].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <InboxIcon />}
-            </ListItemIcon>
-            <ListItemText primary={text} />
+          <ListItem button key={text.name}>
+            <a className="drawer-links" target={text.target} href={text.href}>
+              <ListItemIcon>
+                {/* {index % 2 === 0 ? <InboxIcon /> : <InboxIcon />} */}
+                <img className="drawer-icon" src={logoIcon} alt="" />
+              </ListItemIcon>
+              <ListItemText primary={text.name} />
+            </a>
           </ListItem>
         ))}
       </List>
@@ -76,7 +97,9 @@ export default function Drawer() {
     <div className="top-bar">
       {["left"].map((anchor) => (
         <React.Fragment key={anchor}>
-          <img className="nav-logo" src={logo} />
+          <Link to="/">
+            <img className="nav-logo" src={logo} />
+          </Link>
           <br />
           <Button onClick={toggleDrawer(anchor, true)}>
             <h3 className="top-bar-white">MENU</h3>

@@ -25,3 +25,15 @@
   flex-direction: column;
   gap: 2em;
 }
+
+.drawer-links {
+  text-decoration: none;
+  color: black;
+  display: flex;
+}
+
+.drawer-icon {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
