@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/UVD-customer-app/static/css/main.4d66f45f.chunk.css",
-    "main.js": "/UVD-customer-app/static/js/main.2162fbdc.chunk.js",
-    "main.js.map": "/UVD-customer-app/static/js/main.2162fbdc.chunk.js.map",
+    "main.css": "/UVD-customer-app/static/css/main.3c9209fc.chunk.css",
+    "main.js": "/UVD-customer-app/static/js/main.d2215281.chunk.js",
+    "main.js.map": "/UVD-customer-app/static/js/main.d2215281.chunk.js.map",
     "runtime-main.js": "/UVD-customer-app/static/js/runtime-main.ed5e5358.js",
     "runtime-main.js.map": "/UVD-customer-app/static/js/runtime-main.ed5e5358.js.map",
-    "static/js/2.7fed9c9d.chunk.js": "/UVD-customer-app/static/js/2.7fed9c9d.chunk.js",
-    "static/js/2.7fed9c9d.chunk.js.map": "/UVD-customer-app/static/js/2.7fed9c9d.chunk.js.map",
+    "static/js/2.80c8f624.chunk.js": "/UVD-customer-app/static/js/2.80c8f624.chunk.js",
+    "static/js/2.80c8f624.chunk.js.map": "/UVD-customer-app/static/js/2.80c8f624.chunk.js.map",
     "index.html": "/UVD-customer-app/index.html",
-    "static/css/main.4d66f45f.chunk.css.map": "/UVD-customer-app/static/css/main.4d66f45f.chunk.css.map",
-    "static/js/2.7fed9c9d.chunk.js.LICENSE.txt": "/UVD-customer-app/static/js/2.7fed9c9d.chunk.js.LICENSE.txt",
+    "static/css/main.3c9209fc.chunk.css.map": "/UVD-customer-app/static/css/main.3c9209fc.chunk.css.map",
+    "static/js/2.80c8f624.chunk.js.LICENSE.txt": "/UVD-customer-app/static/js/2.80c8f624.chunk.js.LICENSE.txt",
     "static/media/account.f247c5e5.png": "/UVD-customer-app/static/media/account.f247c5e5.png",
     "static/media/booking.e5ea9f6e.png": "/UVD-customer-app/static/media/booking.e5ea9f6e.png",
     "static/media/call.70ea9a1e.png": "/UVD-customer-app/static/media/call.70ea9a1e.png",
+    "static/media/icon.2d4b58da.png": "/UVD-customer-app/static/media/icon.2d4b58da.png",
     "static/media/logo.45ae8b11.png": "/UVD-customer-app/static/media/logo.45ae8b11.png",
     "static/media/van.3d0f40e3.png": "/UVD-customer-app/static/media/van.3d0f40e3.png"
   },
   "entrypoints": [
     "static/js/runtime-main.ed5e5358.js",
-    "static/js/2.7fed9c9d.chunk.js",
-    "static/css/main.4d66f45f.chunk.css",
-    "static/js/main.2162fbdc.chunk.js"
+    "static/js/2.80c8f624.chunk.js",
+    "static/css/main.3c9209fc.chunk.css",
+    "static/js/main.d2215281.chunk.js"
   ]
 }
