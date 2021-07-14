@@ -1,0 +1,27 @@
+.nav-logo {
+  width: 300px;
+  max-width: 90%;
+  padding: 1em;
+}
+
+.top-bar {
+  background: rgb(131, 105, 246);
+  background: linear-gradient(
+    12deg,
+    rgba(131, 105, 246, 1) 0%,
+    rgba(114, 186, 222, 1) 35%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  color: white !important;
+  margin: 0px;
+}
+
+.top-bar-white {
+  color: white;
+}
+
+.MuiList-root {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}

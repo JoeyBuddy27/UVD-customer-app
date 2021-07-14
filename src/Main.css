@@ -1,0 +1,21 @@
+.main {
+  background: whitesmoke;
+  width: 100%;
+  padding: 0.5em;
+  margin: 0px auto;
+  box-sizing: border-box;
+}
+
+.mainLinks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+  padding: 1em;
+}
+
+@media only screen and (min-width: 1000px) {
+  .mainLinks {
+    width: 900px;
+    margin: 0px auto;
+  }
+}

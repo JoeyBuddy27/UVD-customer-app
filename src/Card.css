@@ -1,0 +1,25 @@
+.card-image {
+  height: 150px;
+  object-fit: contain;
+}
+
+.card {
+  height: 320px;
+}
+
+.card-image img {
+  object-fit: contain;
+}
+
+@media only screen and (min-width: 1000px) {
+  .card-image {
+    height: 200px;
+  }
+  .card {
+    height: 300px;
+  }
+}
+
+.MuiCardContent-root {
+  padding: 0.5em !important;
+}
