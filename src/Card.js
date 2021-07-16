@@ -37,7 +37,7 @@ export default function MediaCard(props) {
             image={props.image}
             title={props.title}
           />
-          <CardContent>
+          {/* <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
               {props.title}
             </Typography>
@@ -45,12 +45,13 @@ export default function MediaCard(props) {
               {props.description}
             </Typography>
           </CardContent>
-        </CardActionArea>
+       
         <CardActions>
           {/* <Button size="small" color="primary">
           Learn More
         </Button> */}
-        </CardActions>
+          {/* </CardActions> */}
+        </CardActionArea>
       </Card>
     </a>
   );

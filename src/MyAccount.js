@@ -4,7 +4,11 @@ const MyAccount = () => {
   return (
     <div className="myAccount">
       <h1>MY ACCOUNT</h1>
-      <iframe src="https://portal.joblogic.com/" />
+      <iframe
+        className="job-frame"
+        is="x-frame-bypass"
+        src="https://www.robinwieruch.de/react-hooks-fetch-data"
+      ></iframe>
     </div>
   );
 };

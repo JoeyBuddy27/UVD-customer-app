@@ -1,9 +1,10 @@
 .main {
   background: whitesmoke;
-  width: 100%;
+  width: 101%;
   padding: 0.5em;
   margin: 0px auto;
   box-sizing: border-box;
+  height: calc(100vh - 90px);
 }
 
 .mainLinks {
@@ -17,5 +18,8 @@
   .mainLinks {
     width: 900px;
     margin: 0px auto;
+  }
+  .main {
+    width: 100%;
   }
 }

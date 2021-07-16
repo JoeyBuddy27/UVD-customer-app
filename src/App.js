@@ -5,12 +5,10 @@ import { BrowserRouter, Switch } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="App">
-        <Drawer />
-        <Main />
-      </div>
-    </BrowserRouter>
+    <div className="App">
+      <Drawer />
+      <Main />
+    </div>
   );
 }
 

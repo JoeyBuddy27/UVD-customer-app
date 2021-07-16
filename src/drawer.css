@@ -1,5 +1,5 @@
 .nav-logo {
-  width: 300px;
+  width: 50px;
   max-width: 90%;
   padding: 1em;
 }
@@ -13,7 +13,15 @@
     rgba(255, 255, 255, 1) 100%
   );
   color: white !important;
-  margin: 0px;
+  margin: 0px !important;
+  height: 90px;
+  width: 101%;
+}
+
+@media only screen and (min-width: 1000px) {
+  .top-bar {
+    width: 100%;
+  }
 }
 
 .top-bar-white {
@@ -30,10 +38,40 @@
   text-decoration: none;
   color: black;
   display: flex;
+  font-weight: 800 !important;
+  font-family: "Poppins", sans-serif !important;
+}
+
+.MuiTypography-displayBlock {
+  font-weight: 600 !important;
+  font-family: "Poppins", sans-serif !important;
+  line-height: 1em !important;
+  font-size: 16px !important;
 }
 
 .drawer-icon {
   border-radius: 50%;
   width: 20px;
   height: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  /* gap: 5em; */
+}
+
+.sidebar-logo {
+  width: 80%;
+  padding: 1em;
+}
+
+.copyright {
+  padding: 1em;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 12px;
 }

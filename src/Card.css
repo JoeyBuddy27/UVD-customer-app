@@ -1,10 +1,10 @@
 .card-image {
-  height: 150px;
+  height: 180px;
   object-fit: contain;
 }
 
 .card {
-  height: 320px;
+  height: 180px;
 }
 
 .card-image img {
@@ -13,7 +13,7 @@
 
 @media only screen and (min-width: 1000px) {
   .card-image {
-    height: 200px;
+    height: 300px;
   }
   .card {
     height: 300px;

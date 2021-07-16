@@ -14,6 +14,8 @@ import logo from "./images/logo.png";
 import logoIcon from "./images/icon.png";
 // import MailIcon from "@material-ui/icons/Mail";
 import "./drawer.css";
+import favicon from "./images/icon.png";
+import logoBlack from "./images/uvdisinfection.png";
 
 import { Link } from "react-router-dom";
 
@@ -56,25 +58,32 @@ export default function Drawer() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
+      <img className="sidebar-logo" src={logoBlack} />
+      <Divider />
       <List>
         {[
           {
-            name: "Call",
+            name: "CALL US",
             href: "tel:02030519033",
             target: "_blank",
           },
           {
-            name: "Booking",
-            href: "/booking",
+            name: "BOOK NOW",
+            href: "/booking/",
           },
           {
-            name: "My Account",
-            href: "https://portal.joblogic.com",
-            target: "_blank",
+            name: "MY ACCOUNT",
+            href: "/my-account",
+            target: "",
           },
           {
-            name: "Van Tracking",
-            href: "/van",
+            name: "LIVE VIEW",
+            href: "/van/",
+            target: "",
+          },
+          {
+            name: "PRIVACY POLICY",
+            href: "/privacy-policy",
             target: "",
           },
         ].map((text, index) => (
@@ -90,6 +99,7 @@ export default function Drawer() {
         ))}
       </List>
       <Divider />
+      <p className="copyright">© Copyright UV Disinfection 2021</p>
     </div>
   );
 
@@ -97,14 +107,16 @@ export default function Drawer() {
     <div className="top-bar">
       {["left"].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Link to="/">
-            <img className="nav-logo" src={logo} />
-          </Link>
-          <br />
-          <Button onClick={toggleDrawer(anchor, true)}>
-            <h3 className="top-bar-white">MENU</h3>
-            <MenuIcon style={{ color: "white" }} />
-          </Button>
+          <div className="header">
+            <Button onClick={toggleDrawer(anchor, true)}>
+              <h3 className="top-bar-white">MENU</h3>
+              <MenuIcon style={{ color: "white" }} />
+            </Button>
+            <Link to="/">
+              <img className="nav-logo" src={favicon} />
+            </Link>
+          </div>
+
           <SwipeableDrawer
             anchor={anchor}
             open={state[anchor]}

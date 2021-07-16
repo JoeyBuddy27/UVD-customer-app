@@ -2,7 +2,7 @@ import React from "react";
 import accountImage from "./images/account.png";
 import bookingImage from "./images/booking.png";
 import callImage from "./images/call.png";
-import vanImage from "./images/van.png";
+import vanImage from "./images/live.png";
 import Card from "./Card";
 
 const HomeCards = (props) => {
@@ -15,21 +15,21 @@ const HomeCards = (props) => {
       target: "_blank",
     },
     {
-      title: "Booking",
-      href: "/booking",
+      title: "Book Now",
+      href: "/booking/",
       image: bookingImage,
       desc: "Use our booking form to request a demo or a service",
-      target: "_blank",
+      target: "",
     },
     {
       title: "My Account",
-      href: "https://portal.joblogic.com",
+      href: "/my-account",
       image: accountImage,
       desc: "Login to your account to see job info & documents",
       target: "",
     },
     {
-      title: "Live Van Tracking",
+      title: "Van Tracking",
       href: "/van",
       image: vanImage,
       desc: "Live camera feed of our servicing van",
