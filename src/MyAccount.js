@@ -7,7 +7,7 @@ const MyAccount = () => {
       <iframe
         className="job-frame"
         is="x-frame-bypass"
-        src="https://www.robinwieruch.de/react-hooks-fetch-data"
+        src="https://portal.joblogic.com"
       ></iframe>
     </div>
   );
