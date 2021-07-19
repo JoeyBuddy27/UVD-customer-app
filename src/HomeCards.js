@@ -23,10 +23,10 @@ const HomeCards = (props) => {
     },
     {
       title: "My Account",
-      href: "/my-account",
+      href: "https://portal.joblogic.com/",
       image: accountImage,
       desc: "Login to your account to see job info & documents",
-      target: "",
+      target: "_blank",
     },
     {
       title: "Van Tracking",

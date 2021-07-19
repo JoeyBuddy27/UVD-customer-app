@@ -58,7 +58,11 @@ export default function Drawer() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <img className="sidebar-logo" src={logoBlack} />
+      <>
+        <a href="/">
+          <img className="sidebar-logo" src={logoBlack} />
+        </a>
+      </>
       <Divider />
       <List>
         {[
@@ -73,8 +77,8 @@ export default function Drawer() {
           },
           {
             name: "MY ACCOUNT",
-            href: "/my-account",
-            target: "",
+            href: "https://portal.joblogic.com/",
+            target: "_blank",
           },
           {
             name: "LIVE VIEW",

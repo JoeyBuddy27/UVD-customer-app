@@ -7,10 +7,10 @@ const Van = () => {
       <h1>LIVE VIEW</h1>
       <iframe
         class="YT-frame"
-        src="https://www.youtube.com/embed/JCZ6qFNirKg"
+        src="https://www.youtube.com/embed/live_stream?channel=UCcHLTLno8dXs5yJ3HA0FeaQ&?autoplay=1"
         title="YouTube video player"
         frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allow="accelerometer; fullscreen; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       ></iframe>
     </div>
