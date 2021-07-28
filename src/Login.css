@@ -31,3 +31,8 @@ form > input {
   max-width: 99%;
   box-sizing: border-box;
 }
+
+.link {
+  color: rgb(114, 186, 222);
+  text-decoration: none;
+}

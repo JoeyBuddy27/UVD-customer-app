@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 import "./Login.css";
 import { useAuth } from "./AuthContext";
 import Alert from "@material-ui/lab/Alert";
@@ -54,6 +54,13 @@ const Login = () => {
           </div>
         </form>
       </div>
+      <small>
+        Don't have an account yet?{" "}
+        <Link className="link" to="/signup">
+          Signup
+        </Link>{" "}
+        for one
+      </small>
     </div>
   );
 };
