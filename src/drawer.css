@@ -24,6 +24,10 @@
   }
 }
 
+#sign-out {
+  font-weight: 300 !important;
+}
+
 .top-bar-white {
   color: white;
 }

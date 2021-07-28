@@ -1,0 +1,33 @@
+form > input {
+  display: block;
+  margin: 0px auto;
+  margin-top: 1em;
+  width: 320px;
+  max-width: 99%;
+  border: 1px solid rgb(114, 186, 222);
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.submit {
+  background: rgb(114, 186, 222);
+  border: none;
+  padding: 1em;
+  color: white;
+  font-weight: 800;
+  margin-top: 1em;
+  width: 320px;
+  max-width: 99%;
+}
+
+.login-error {
+  color: red;
+}
+
+.MuiAlert-outlinedError {
+  margin: 0px auto;
+  text-align: center;
+  width: 320px;
+  max-width: 99%;
+  box-sizing: border-box;
+}

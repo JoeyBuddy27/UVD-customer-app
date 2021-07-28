@@ -38,7 +38,7 @@ const HomeCards = (props) => {
   ];
 
   return (
-    <>
+    <React.Fragment>
       <h1>CUSTOMER PORTAL</h1>
       <div className="mainLinks">
         {mainLinks.map((link) => (
@@ -53,7 +53,7 @@ const HomeCards = (props) => {
           </section>
         ))}
       </div>
-    </>
+    </React.Fragment>
   );
 };
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/core/styles";
 import SwipeableDrawer from "@material-ui/core/SwipeableDrawer";
@@ -8,16 +8,14 @@ import Divider from "@material-ui/core/Divider";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
-import InboxIcon from "@material-ui/icons/MoveToInbox";
 import MenuIcon from "@material-ui/icons/Menu";
-import logo from "./images/logo.png";
 import logoIcon from "./images/icon.png";
-// import MailIcon from "@material-ui/icons/Mail";
 import "./drawer.css";
 import favicon from "./images/icon.png";
 import logoBlack from "./images/uvdisinfection.png";
+import { useAuth } from "./AuthContext";
 
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 const useStyles = makeStyles({
   list: {
@@ -29,6 +27,9 @@ const useStyles = makeStyles({
 });
 
 export default function Drawer() {
+  const setError = useState("");
+
+  let history = useHistory();
   const classes = useStyles();
   const [state, setState] = React.useState({
     top: false,
@@ -36,6 +37,8 @@ export default function Drawer() {
     bottom: false,
     right: false,
   });
+
+  const { logout } = useAuth();
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (
@@ -49,6 +52,15 @@ export default function Drawer() {
     setState({ ...state, [anchor]: open });
   };
 
+  async function signOut() {
+    try {
+      await logout();
+      await history.push("/");
+    } catch {
+      setError("Failed to log out");
+    }
+  }
+
   const list = (anchor) => (
     <div
       className={clsx(classes.list, {
@@ -58,11 +70,11 @@ export default function Drawer() {
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
-      <>
+      <React.Fragment>
         <a href="/">
-          <img className="sidebar-logo" src={logoBlack} />
+          <img className="sidebar-logo" alt="logo" src={logoBlack} />
         </a>
-      </>
+      </React.Fragment>
       <Divider />
       <List>
         {[
@@ -90,11 +102,21 @@ export default function Drawer() {
             href: "/privacy-policy",
             target: "",
           },
+          {
+            name: "SIGN OUT",
+            id: "sign-out",
+            click: signOut,
+          },
         ].map((text, index) => (
           <ListItem button key={text.name}>
-            <a className="drawer-links" target={text.target} href={text.href}>
+            <a
+              className="drawer-links"
+              id={text.id}
+              target={text.target}
+              href={text.href}
+              onClick={text.click}
+            >
               <ListItemIcon>
-                {/* {index % 2 === 0 ? <InboxIcon /> : <InboxIcon />} */}
                 <img className="drawer-icon" src={logoIcon} alt="" />
               </ListItemIcon>
               <ListItemText primary={text.name} />
@@ -117,7 +139,7 @@ export default function Drawer() {
               <MenuIcon style={{ color: "white" }} />
             </Button>
             <Link to="/">
-              <img className="nav-logo" src={favicon} />
+              <img className="nav-logo" alt="nav logo" src={favicon} />
             </Link>
           </div>
 
