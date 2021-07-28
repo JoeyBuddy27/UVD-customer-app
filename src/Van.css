@@ -20,3 +20,29 @@ iframe {
   height: 1000px;
   border: none;
 }
+
+.engineer-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.engineer-buttons h6 {
+  cursor: pointer;
+  border: 1px solid rgb(114, 186, 222);
+  padding: 1em;
+  transition: 0.3s all ease-in-out;
+}
+
+.engineer-buttons h6:hover {
+  background: rgb(114, 186, 222);
+  color: white;
+}
+
+.van p {
+  font-size: 10px;
+}
+
+.video-section {
+  margin-top: 1em;
+}
