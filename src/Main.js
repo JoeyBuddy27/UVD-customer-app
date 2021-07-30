@@ -8,6 +8,7 @@ import PrivacyPolicy from "./PrivacyPolicy";
 import HomeCards from "./HomeCards";
 import Login from "./Login";
 import PrivateRoute from "./PrivateRoute";
+import Signup from "./Signup";
 import { AuthProvider } from "./AuthContext";
 
 const Main = (props) => {
@@ -16,6 +17,7 @@ const Main = (props) => {
       <AuthProvider>
         <Switch>
           <Route path="/" exact component={Login} />
+          <Route path="/signup" component={Signup} />
           <PrivateRoute path="/home" component={HomeCards} />
           <PrivateRoute path="/booking" component={Booking} />
           <PrivateRoute path="/van" component={Van} />
