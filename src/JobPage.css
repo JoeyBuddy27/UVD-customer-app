@@ -1,0 +1,30 @@
+.jobPage {
+}
+
+.job-title {
+  color: rgb(114, 186, 222);
+}
+
+.job-detail,
+.job-attachments {
+  border: 1px solid grey;
+  margin-bottom: 2em;
+}
+
+.job-detail-inner {
+  padding: 1em;
+}
+
+.job-detail h3,
+.job-attachments h3 {
+  background: rgb(114, 186, 222);
+  color: white;
+  width: 100%;
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 1em;
+}
+
+.job-images {
+  max-width: 95%;
+}

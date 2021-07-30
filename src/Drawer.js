@@ -89,8 +89,7 @@ export default function Drawer() {
           },
           {
             name: "MY ACCOUNT",
-            href: "https://portal.joblogic.com/",
-            target: "_blank",
+            href: "/my-account",
           },
           {
             name: "LIVE VIEW",

@@ -7,6 +7,7 @@ import { Switch, Route } from "react-router-dom";
 import PrivacyPolicy from "./PrivacyPolicy";
 import HomeCards from "./HomeCards";
 import Login from "./Login";
+import JobPage from "./JobPage";
 import PrivateRoute from "./PrivateRoute";
 import Signup from "./Signup";
 import { AuthProvider } from "./AuthContext";
@@ -21,7 +22,11 @@ const Main = (props) => {
           <PrivateRoute path="/home" component={HomeCards} />
           <PrivateRoute path="/booking" component={Booking} />
           <PrivateRoute path="/van" component={Van} />
-          <PrivateRoute path="/my-account" component={MyAccount} />
+          <PrivateRoute path="/my-account" exact component={MyAccount} />
+          <Route
+            path="/my-account/:id"
+            render={(props) => <JobPage {...props} />}
+          />
           <PrivateRoute path="/privacy-policy" component={PrivacyPolicy} />
         </Switch>
       </AuthProvider>

@@ -1,0 +1,62 @@
+.card-inner {
+  display: flex;
+  justify-content: space-around;
+  /* padding: 1em; */
+  /* text-align: center; */
+  /* align-items: center;
+  align-content: center; */
+}
+
+.JobCard {
+  margin: 2em 0;
+}
+
+.card-inner > div {
+  flex: 0.33;
+}
+
+.card-inner p {
+  font-size: 12px;
+}
+
+.card-inner h5 {
+  color: grey;
+}
+
+.visit-card {
+  border: 1px solid grey;
+  padding: 0.5em;
+  width: 250px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: row;
+  gap: 3em;
+}
+
+.MuiButton-containedPrimary {
+  margin-bottom: 2em !important;
+  margin-top: 2em !important;
+}
+
+@media only screen and (max-width: 1000px) {
+  /* .visit-card {
+    flex-direction: column !important;
+    gap: 0em;
+  } */
+  .card-inner {
+    display: block;
+  }
+  .right {
+    margin-bottom: 2em;
+  }
+}
+
+.MuiCardActions-root {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
